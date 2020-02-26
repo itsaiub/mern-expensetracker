@@ -7,9 +7,9 @@ import AddTransaction from "./components/AddTransaction";
 
 const App = () => {
   return (
-    <div className="flex flex-col  h-screen pt-10 justify-center items-center">
+    <div className="flex flex-col py-10 justify-center items-center">
       <Header />
-      <div className="w-1/4">
+      <div className="w-1/2 md:w-1/3">
         <Balance />
         <IncomeExpense />
         <TransactionList />
