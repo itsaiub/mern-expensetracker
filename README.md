@@ -2,6 +2,12 @@
 
 ---
 
+#### ScreenShot:
+
+![alt text](https://github.com/itsaiub/mern-expensetracker/blob/master/screenshot/sc_1.png?raw=true "Screenshot of Expense Tracker")
+
+---
+
 #### Tech Stack
 
 ###### **Frontend**
