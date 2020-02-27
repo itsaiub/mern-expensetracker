@@ -23,7 +23,7 @@ const AddTransaction = () => {
 
   return (
     <React.Fragment>
-      <h3 className="text-2xl">Add new transaction</h3>
+      <h3 className="text-2xl mt-4">Add new transaction</h3>
       <hr className="border-t-2" />
       <form onSubmit={handleSubmit} className="my-4">
         <div className="mb-2">

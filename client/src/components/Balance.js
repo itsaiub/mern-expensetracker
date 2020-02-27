@@ -14,7 +14,10 @@ const Balance = () => {
       <div className="w-56 self-start text-gray-800">
         <h3 className="text-lg uppercase mt-2">Your balance</h3>
         <p className="text-3xl font-medium">
-          ${new Intl.NumberFormat().format(total)}
+          $
+          {new Intl.NumberFormat("en-US", { minimumFractionDigits: 2 }).format(
+            total
+          )}
         </p>
       </div>
     </Fragment>

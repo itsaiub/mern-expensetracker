@@ -9,7 +9,7 @@ const Transaction = ({ transaction }) => {
   return (
     <li className="relative group">
       <button
-        onClick={() => deleteTransaction(transaction.id)}
+        onClick={() => deleteTransaction(transaction._id)}
         className="p-1 bg-red-700 text-white text-black absolute opacity-0 group-hover:opacity-100 cursor-pointer transition-opacity duration-300 ease-out transform -translate-x-full translate-y-1/2"
       >
         X
@@ -21,10 +21,10 @@ const Transaction = ({ transaction }) => {
             : "p-4 my-3 bg-white shadow-md flex justify-between border-r-8 r border-red-700 rounded "
         }
       >
-        <h6>{transaction.text}</h6>
-        <h5>{`${sign} $${new Intl.NumberFormat().format(
-          Math.abs(transaction.amount).toFixed(2)
-        )}`}</h5>
+        <h6 className="capitalize">{transaction.text}</h6>
+        <h5>{`${sign} $${new Intl.NumberFormat("en-US", {
+          minimumFractionDigits: 2
+        }).format(Math.abs(transaction.amount).toFixed(2))}`}</h5>
       </div>
     </li>
   );

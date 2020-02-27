@@ -20,13 +20,19 @@ const IncomeExpense = () => {
       <div className="border-r border-gray-400 flex-1">
         <h5>income</h5>
         <p className="text-green-700 text-xl">
-          ${new Intl.NumberFormat().format(income)}
+          $
+          {new Intl.NumberFormat("en-US", { minimumFractionDigits: 2 }).format(
+            income
+          )}
         </p>
       </div>
       <div className="flex-1 ">
         <h5>expense</h5>
         <p className="text-red-700 text-xl">
-          - ${new Intl.NumberFormat().format(Math.abs(expense))}
+          - $
+          {new Intl.NumberFormat("en-US", { minimumFractionDigits: 2 }).format(
+            Math.abs(expense)
+          )}
         </p>
       </div>
     </div>
